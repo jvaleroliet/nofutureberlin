@@ -1,0 +1,16 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+

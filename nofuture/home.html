@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Happy Jekylling!"
+permalink: home
+---
+<nav class="flex justify-between sticky top-0 py-2 px-4 bg-crazybase kanit-extrabold text-2xl">
+    <a href="Nofuture">about</a>
+    <a href="No futureNo FUture">releases</a>
+    <a href="No futureNo FUture">dates</a>
+    <a href="No futureNo FUture">contact</a>
+
+</nav>
+<div class="flex justify-center items-center">
+<div id="sexytest" class="pt-20">
+</div>
+</div>
+
+<script>
+    // Define text style
+    const text = new Blotter.Text("No Future Berlin", {
+        family: "Kanit",
+        size: 200,
+        paddingLeft: 150,
+        paddingRight: 150,
+        fill: "#EB1954",
+    });
+    
+    let material = new Blotter.LiquidDistortMaterial();
+    
+    // Set material opts
+    material.uniforms.uSpeed.value = 0.2;
+    material.uniforms.uVolatility.value = 0.05;
+    
+    let blotter = new Blotter(material, {
+        texts: text,
+    });
+    
+    // Apply to element
+    let elem = document.getElementById("sexytest");
+    let scope = blotter.forText(text);
+    scope.appendTo(elem);
+</script>
