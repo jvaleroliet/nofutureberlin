@@ -12,7 +12,10 @@ module.exports = {
     theme: {
         extend: {
           colors: {
-            'crazybase':'#EB521A',
+            'base1':'#B14A7A',
+            'base2':'#864E68',
+            'base3':'#DB3682',
+            'base4':'#5C4550'
           }
         },
     },

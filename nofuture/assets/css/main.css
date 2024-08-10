@@ -14,3 +14,19 @@
   }
 
 
+@keyframes rotate
+  {
+       0%   { -moz-transform: rotate(0); }
+       25%  { -moz-transform: rotate(90); }
+       50%  { -moz-transform: rotate(180); }
+       75%  { -moz-transform: rotate(270); }
+       100% { -moz-transform: rotate(360); }
+  }
+  
+#rotating_div
+  {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }

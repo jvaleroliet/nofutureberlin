@@ -3,7 +3,7 @@ layout: default
 title: "Happy Jekylling!"
 permalink: home
 ---
-<nav class="flex justify-between sticky top-0 py-2 px-4 bg-crazybase kanit-extrabold text-2xl">
+<nav class="flex justify-between sticky top-0 py-2 px-4 bg-base3 kanit-extrabold text-2xl text-base4">
     <a href="Nofuture">about</a>
     <a href="No futureNo FUture">releases</a>
     <a href="No futureNo FUture">dates</a>
@@ -11,18 +11,22 @@ permalink: home
 
 </nav>
 <div class="flex justify-center items-center">
-<div id="sexytest" class="pt-20">
+    <div class="w-2/4">
+        {% picture jpt-webp  "base/logo.jpg"%}
+    </div>
+
 </div>
-</div>
+<div id="rotating_div" class="w-1/4" onclick="rotate("rotating_div")"><img src="{{ site.baseurl }}/assets/images/releases/release1.jpg" alt=""></div>
+
 
 <script>
     // Define text style
     const text = new Blotter.Text("No Future Berlin", {
         family: "Kanit",
-        size: 200,
+        size: 150,
         paddingLeft: 150,
         paddingRight: 150,
-        fill: "#EB1954",
+        fill: "#5C4550",
     });
     
     let material = new Blotter.LiquidDistortMaterial();
@@ -40,3 +44,4 @@ permalink: home
     let scope = blotter.forText(text);
     scope.appendTo(elem);
 </script>
+<script src="{{ site.baseurl}}/assets/js/rotate.js"></script>

@@ -10,3 +10,7 @@ plugins:
 postcss:
   cache: false
 
+picture:
+  source: "assets/images"
+  output: "assets/images/generated"
+  suppress_warnings: true
