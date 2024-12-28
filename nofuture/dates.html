@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Dates"
+permalink: dates
+---
+
+{% assign sortedPosts = site.dates | sort: 'date' | reverse %}
+{% for date in sortedPosts %}
+    <div class="border-t-[2px] border-black flex flex-row justify-between py-4 px-4 md:px-4 font-karrik">
+        <div class="flex items-center">
+            <span class="text-4xl font-bold mr-8">✰</span>
+            <a href="https://www.pankeculture.com/" target="_blank" class="flex flex-col gap-2 hover:text-pink-500">
+            <div class="text-4xl leading-none relative overflow-hidden">
+                {{ date.event }}
+            </div>
+            <div class="flex gap-2 flex-row items-center">
+                <div class="text-l italic">{{ date.location }}</div>
+            </div>
+            </a>
+        </div>
+        <div class="flex flex-row gap-1 items-center">
+            <div class="text-lg md:text-4xl leading-none w-max">
+                {{ date.date | date: "%-d %b %Y" }}
+            </div>
+        </div>
+    </div>
+  {% endfor %}

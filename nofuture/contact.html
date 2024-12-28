@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Happy Jekylling!"
+permalink: contact
+---
+
+<div class="container mx-auto py-16 px-4">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 px-28 mb-6 md:mb-0">
+            {% picture jpt-webp  "base/round_logo.jpg" --link {{ site.baseurl }}/home %}
+        </div>
+        <div class="md:w-1/2 ml-0 md:ml-6">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p class="text-lg leading-relaxed">
+                {% include contact-form.html %}
+            </p>
+            <p class="mt-4">
+                
+            </p>
+        </div>
+    </div>
+</div>

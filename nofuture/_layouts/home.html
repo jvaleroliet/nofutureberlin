@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Happy Jekylling! - </title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
@@ -14,17 +14,13 @@
     </head>
   <body>
     <div class="flex flex-col min-h-screen">
-      <nav class="flex justify-between sticky top-0 py-2 px-4 bg-white kanit-extrabold text-3xl text-base1 z-20">
-          <a href="/releases">releases</a>
-          <a href="/dates">dates</a>
-          <nav class="w-44">{::nomarkdown}<a href="/home"><picture><source srcset="/assets/images/generated/base/logo-400-2d1953829.webp 400w, /assets/images/generated/base/logo-600-2d1953829.webp 600w, /assets/images/generated/base/logo-800-2d1953829.webp 800w, /assets/images/generated/base/logo-1000-2d1953829.webp 1000w" type="image/webp"><source srcset="/assets/images/generated/base/logo-400-bbe9af35a.jpg 400w, /assets/images/generated/base/logo-600-bbe9af35a.jpg 600w, /assets/images/generated/base/logo-800-bbe9af35a.jpg 800w, /assets/images/generated/base/logo-1000-bbe9af35a.jpg 1000w" type="image/jpeg"><img src="/assets/images/generated/base/logo-800-bbe9af35a.jpg"></picture></a>{:/nomarkdown}</nav>
-          <a href="/about">about</a>
-          <a href="/contact">contact</a>
+      <nav class="flex justify-between sticky top-0 py-2 px-4 bg-white kanit-extrabold text-3xl text-base1">
+          <a href="{{ site.baseurl }}/releases">releases</a>
+          <a href="{{ site.baseurl }}/dates">dates</a>
+          <a href="{{ site.baseurl }}/about">about</a>
+          <a href="{{ site.baseurl }}/contact">contact</a>
       </nav> 
-    <h2 id="youre-ready-to-go">You’re ready to go!</h2>
-
-<p>Start developing your Jekyll website.</p>
-
+    {{ content }}
     <footer class="bg-white fixed bottom-0 z-10 w-full">
       <nav class="flex justify-between sticky top-0 py-2 px-4 bg-white kanit-extrabold text-3xl text-base1">
         <a href="https://www.instagram.com/nofutureb3rl1n/" class="text-gray-800 hover:text-gray-900">
