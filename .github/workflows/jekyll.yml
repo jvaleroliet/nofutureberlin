@@ -29,9 +29,6 @@ concurrency:
 jobs:
   # Build job
   build:
-    defaults:
-        run:
-          working-directory: nofuture
     runs-on: ubuntu-latest
     steps:
       # Jekyll Picture Tag requires libvips libraries for resizing images, which must be installed
