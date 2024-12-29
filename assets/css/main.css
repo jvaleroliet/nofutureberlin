@@ -36,6 +36,19 @@
     animation-play-state: paused;
   }
 
+  .bg-pink-600.flex.justify-between.sticky.top-0.py-2.px-4.kanit-extrabold.text-3xl.text-base1 a{
+    color:  black;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .bg-pink-600.flex.justify-between.sticky.top-0.py-2.px-4.kanit-extrabold.text-3xl.text-base1 a:hover {
+    color: transparent;
+    transition: 500ms ease;
+  }
+
+
   .flex.justify-between.sticky.top-0.py-2.px-4.bg-white.kanit-extrabold.text-3xl.text-base1 a{
     color:  black;
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
@@ -47,8 +60,6 @@
     color: transparent;
     transition: 500ms ease;
   }
-
-
 
   .zoom {
     transition: transform .2s; /* Animation */ 
