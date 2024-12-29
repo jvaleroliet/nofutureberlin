@@ -48,7 +48,10 @@
     transition: 500ms ease;
   }
 
-
+  .animate-spin {
+    animation: spin 3s linear infinite; 
+  }
+  
   .flex.justify-between.sticky.top-0.py-2.px-4.bg-white.kanit-extrabold.text-3xl.text-base1 a{
     color:  black;
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
