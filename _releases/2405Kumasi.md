@@ -3,7 +3,7 @@ layout: default
 title: KUMASI LAB
 type: release
 artists: hero created
-picture: releases/release4.jpg
+picture: release4.jpg
 external_link: https://nofutureberlin.bandcamp.com/album/nofuture-va-2023-vol-2
 year: 2024
 ---
