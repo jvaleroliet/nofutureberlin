@@ -2,7 +2,8 @@ url: "http://nofutureberlin.club" # the base hostname & protocol for your site, 
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
 
-
+exclude:
+- _templates/
 
 plugins:
   - jekyll-postcss

@@ -20,7 +20,7 @@ permalink: music
             {% assign sortedPosts = site.releases | sort: 'permalink' | reverse %}
             {% for release in sortedPosts %}
                 <li class="{{release.type}} kimhiorthoy">
-                    {% picture jpt-webp  "{{ release.picture }}" 1:1 --link {{ release.external_link }} %}
+                    {% picture jpt-webp  "releases/{{ release.picture }}" 1:1 --link {{ release.external_link }} %}
                     <p>{{ release.artists }} &mdash; <strong> {{ release.title }}</strong> ({{ release.year }})</p>
                 </li>
             {% endfor %}
